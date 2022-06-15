@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorButtonNormal"
+
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+
+
+    <LinearLayout
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+
+            android:id="@+id/dateDelete"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Type title to search:"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/insertSearch"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <ListView
+                android:id="@+id/searchList"
+                android:layout_width="wrap_content"
+                android:layout_height="338dp"
+                tools:layout_editor_absoluteX="70dp"
+                tools:layout_editor_absoluteY="1dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

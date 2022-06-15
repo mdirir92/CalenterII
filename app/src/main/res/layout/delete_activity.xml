@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="379dp">
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/Input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Input ID"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"
+        android:layout_marginLeft="0sp"
+        app:layout_constraintTop_toBottomOf="@id/list"
+        android:ems="10"
+        android:inputType="number"
+        android:text="" />
+
+    <Button
+        android:id="@+id/DeleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Appointment"
+        android:layout_margin="10sp"
+        app:layout_constraintTop_toBottomOf="@id/Input"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="447dp"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

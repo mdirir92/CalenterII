@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ListView
+        android:id="@+id/Viewlist"
+        android:layout_width="match_parent"
+        android:layout_height="379dp">
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/ViewInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Input ID"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/Viewlist" />
+
+    <Button
+        android:id="@+id/EditBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:text="Edit Appointment"
+        app:layout_constraintTop_toBottomOf="@id/ViewInput"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="93dp" />
+
+</android.support.constraint.ConstraintLayout>

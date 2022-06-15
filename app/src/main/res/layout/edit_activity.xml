@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/edit_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <EditText
+        android:id="@+id/edit_Input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Event Title"
+        app:layout_constraintTop_toBottomOf="@id/edit_date"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/edit_timeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Time"
+        app:layout_constraintTop_toBottomOf="@id/edit_Input"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <Button
+        android:id="@+id/edit_TimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edit_timeInput"
+        android:text="Pick Time"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="139dp" />
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edit_TimePicker"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <EditText
+                android:padding="10dp"
+                android:gravity="top|left"
+                android:id="@+id/edit_detailText"
+                android:layout_width="350sp"
+                android:layout_height="200sp"
+                android:scrollbars="vertical"
+                app:layout_constraintTop_toBottomOf="@id/edit_TimePicker"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="206dp"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/edit_saveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/edit_detailText"
+                android:text="Save"
+                tools:layout_editor_absoluteX="136dp"
+                tools:layout_editor_absoluteY="447dp"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

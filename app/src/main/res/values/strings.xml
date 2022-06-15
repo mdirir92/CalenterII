@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Calenter</string>
+    <string name="create_appntm">Create Appointment</string>
+    <string name="edit_view">View/Edit Appointment</string>
+    <string name="del">Delete Appointment</string>
+    <string name="move">Move Appointment</string>
+    <string name="search">Search</string>
+    <string name="dateCal">Date</string>
+    <string name="textInput">Event Title</string>
+    <string name="timeInput">Time</string>
+    <string name="timeSetter">Pick Time</string>
+    <string name="no_label">No</string>
+    <string name="yes_label">Yes</string>
+    <string name="Select">Select </string>
+    <string name="All">Delete All </string>
+    <string-array name="deleteArray">
+        <item>@string/All</item>
+        <item>@string/Select</item>
+    </string-array>
+</resources>
